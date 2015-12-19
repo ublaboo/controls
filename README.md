@@ -1,5 +1,11 @@
+[![Build Status](https://travis-ci.org/ublaboo/controls.svg?branch=1.0.0)](https://travis-ci.org/ublaboo/controls)
+
+
 # controls
 Extension for Nette Framework: Some of form controls modified (no-translate select box options, checkbox list, changeable label text input, etc)
+[![Latest Stable Version](https://poser.pugx.org/ublaboo/controls/v/stable)](https://packagist.org/packages/ublaboo/controls) [![License](https://poser.pugx.org/ublaboo/controls/license)](https://packagist.org/packages/ublaboo/controls)
+[![Total Downloads](https://poser.pugx.org/ublaboo/controls/downloads)](https://packagist.org/packages/ublaboo/controls)
+[![HHVM Status](http://hhvm.h4cc.de/badge/ublaboo/controls.svg?style=flat)](http://hhvm.h4cc.de/package/ublaboo/controls)
 
 ## 1, Register extension
 
