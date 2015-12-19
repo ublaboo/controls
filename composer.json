@@ -1,0 +1,36 @@
+{
+	"name": "ublaboo/controls",
+	"type": "library",
+	"description": "Extension for Nette Framework: Controls: that has not translatable content (radiolist, selectbox), custom label text input",
+	"keywords": ["controls", "nette", "extension"],
+	"homepage": "http://ublaboo.paveljanda.com/controls",
+	"license": ["MIT"],
+	"support": {
+		"issues": "https://github.com/ublaboo/controls/issues"
+	},
+	"authors": [
+		{
+			"name": "Pavel Janda",
+			"homepage": "http://paveljanda.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Ublaboo\\Controls\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Ublaboo\\Controls\\Tests\\": "tests"
+		}
+	},
+	"require": {
+		"nette/di"    : "~2.3.0",
+		"nette/forms" : "~2.3.0"
+	},
+	"require-dev": {
+		"nette/tester"    : "~1.6.1",
+		"mockery/mockery" : "~0.9",
+		"tracy/tracy"     : "~2.3.0"
+	}
+}
