@@ -1,6 +1,7 @@
 [![Build Status](https://travis-ci.org/ublaboo/controls.svg?branch=master)](https://travis-ci.org/ublaboo/controls)
 [![Latest Stable Version](https://poser.pugx.org/ublaboo/controls/v/stable)](https://packagist.org/packages/ublaboo/controls) [![License](https://poser.pugx.org/ublaboo/controls/license)](https://packagist.org/packages/ublaboo/controls)
 [![Total Downloads](https://poser.pugx.org/ublaboo/controls/downloads)](https://packagist.org/packages/ublaboo/controls)
+[![Gitter](https://img.shields.io/gitter/room/nwjs/nw.js.svg)](https://gitter.im/ublaboo/help)
 
 # controls
 Extension for Nette Framework: Some of form controls modified (no-translate select box options, checkbox list, changeable label text input, etc)
