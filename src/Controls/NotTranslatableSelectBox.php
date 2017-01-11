@@ -20,12 +20,6 @@ class NotTranslatableSelectBox extends Nette\Forms\Controls\SelectBox
 	private $options = [];
 
 	/**
-	 * @var mixed
-	 */
-	private $prompt = FALSE;
-
-
-	/**
 	 * We have to repeat that method in our class due to parent::$options property accesibility
 	 *  Otherwise we would be working with BaseControl::$options
 	 * @param array   $items   [description]
@@ -58,7 +52,7 @@ class NotTranslatableSelectBox extends Nette\Forms\Controls\SelectBox
 	 */
 	public function getControl()
 	{
-		$items = $this->prompt === FALSE ? array() : array('' => $this->translate($this->prompt));
+		$items = $this->getPrompt() === FALSE ? array() : array('' => $this->translate($this->getPrompt()));
 		foreach ($this->options as $key => $value) {
 			$items[is_array($value) ? $key : $key] = $value;
 		}
