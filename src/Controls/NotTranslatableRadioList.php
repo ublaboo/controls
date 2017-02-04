@@ -29,7 +29,7 @@ class NotTranslatableRadioList extends Nette\Forms\Controls\RadioList
 	 * Just remove translations from each option
 	 * @return Nette\Forms\Helpers
 	 */
-	public function getControl()
+	public function getControl(): Nette\Utils\Html
 	{
 		$input = ChoiceControl::getControl();
 		$items = $this->getItems();

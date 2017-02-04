@@ -25,7 +25,7 @@ class NotTranslatableSelectBox extends Nette\Forms\Controls\SelectBox
 	 * @param array   $items   [description]
 	 * @param boolean $useKeys [description]
 	 */
-	public function setItems(array $items, $useKeys = TRUE)
+	public function setItems(array $items, bool $useKeys = TRUE)
 	{
 		if (!$useKeys) {
 			$res = array();
@@ -50,7 +50,7 @@ class NotTranslatableSelectBox extends Nette\Forms\Controls\SelectBox
 	 * Just remove translations from each option
 	 * @return Nette\Forms\Helpers
 	 */
-	public function getControl()
+	public function getControl(): Nette\Utils\Html
 	{
 		$items = $this->getPrompt() === FALSE ? array() : array('' => $this->translate($this->getPrompt()));
 		foreach ($this->options as $key => $value) {
