@@ -73,18 +73,15 @@ class NotTranslatableSelectBox extends Nette\Forms\Controls\SelectBox
 	 * @return void
 	 */
 	public static function register($control_name = 'addNotTranslatableSelect') {
-		Nette\Object::extensionMethod(
-			'Nette\Forms\Container::' . $control_name,
-			function ($form, $name, $label = NULL, array $items = NULL, $size = NULL) {
-				$control = new self($label, $items);
+		Nette\Forms\Container::extensionMethod($control_name, function ($form, $name, $label = NULL, array $items = NULL, $size = NULL) {
+			$control = new self($label, $items);
 
-				if ($size > 1) {
-					$control->setAttribute('size', (int) $size);
-				}
-
-				return $form[$name] = $control;
+			if ($size > 1) {
+				$control->setAttribute('size', (int) $size);
 			}
-		);
+
+			return $form[$name] = $control;
+		});
 	}
 
 }

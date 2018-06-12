@@ -19,14 +19,11 @@ class TextInputCustomLabel extends Nette\Forms\Controls\TextInput
 	 * @return void
 	 */
 	public static function register($control_name = 'addTextCustomLabel') {
-		Nette\Object::extensionMethod(
-			'Nette\Forms\Container::' . $control_name,
-			function ($form, $name, $label = NULL, array $items = NULL) {
-				$control = new self($label, $items);
+		Nette\Forms\Container::extensionMethod($control_name, function ($form, $name, $label = NULL, array $items = NULL) {
+			$control = new self($label, $items);
 
-				return $form[$name] = $control;
-			}
-		);
+			return $form[$name] = $control;
+		});
 	}
 
 
